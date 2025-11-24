@@ -3,13 +3,20 @@
 ## Prerequisites
 - Python 3.x installed
 - Chrome or Firefox browser installed
+- [Allure Commandline](https://docs.qameta.io/allure/#_installing_a_commandline) installed (required for viewing reports)
 
 ## Setup
 
-1. **Create a Virtual Environment** (Recommended)
-   ```bash
-   python -m venv venv
-   ```
+1. **Run the Setup Script**
+   - Windows (PowerShell):
+     ```powershell
+     .\setup.ps1
+     ```
+   - macOS/Linux:
+     ```bash
+     chmod +x setup.sh
+     ./setup.sh
+     ```
 
 2. **Activate the Virtual Environment**
    - Windows:
@@ -20,11 +27,6 @@
      ```bash
      source venv/bin/activate
      ```
-
-3. **Install Dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
 
 ## Running Tests
 
@@ -47,12 +49,12 @@ pytest --browser=firefox
 ### Run Tests with Allure Reports
 To generate Allure reports:
 ```bash
-pytest --alluredir=reports
+pytest --alluredir=reports/allure-reports
 ```
 
 To view the Allure report:
 ```bash
-allure serve reports
+allure serve reports/allure-reports
 ```
 
 ### Run Specific Test File
