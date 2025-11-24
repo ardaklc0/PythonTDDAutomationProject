@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
+# Selenium
+geckodriver.log
+
+# Project specific
+screenshots/*.png
+!screenshots/.gitkeep
+reports/
+*.allure/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Webdriver Manager cache
+.wdm/
